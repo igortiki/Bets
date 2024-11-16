@@ -1,7 +1,7 @@
 import UIKit
 import BetsCore
 
-class ViewController: UIViewController, UICollectionViewDataSource {
+class ViewController: UIViewController {
     
     private var list: UICollectionView!
     private var activity: UIActivityIndicatorView!
@@ -12,6 +12,13 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Odds"
+        
+        configureCollectonView()
+        configureIndicatorView()
+        fetchData()
+    }
+        
+    private func configureCollectonView() {
         
         let configuration = UICollectionLayoutListConfiguration(appearance: .plain)
         let layout = UICollectionViewCompositionalLayout.list(using: configuration)
@@ -29,7 +36,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
             list.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             list.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
-        
+    }
+    
+    private func configureIndicatorView() {
         activity = UIActivityIndicatorView(style: .medium)
         activity.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(activity)
@@ -37,7 +46,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
             activity.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             activity.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
-        
+    }
+    
+    private func fetchData() {
         UIView.animate(withDuration: 1, animations: {
             self.list.isHidden = true
             self.activity.startAnimating()
@@ -58,6 +69,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
             }
         }
     }
+}
+
+extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -67,8 +81,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         let item = items[indexPath.item]
         let cell = list.dequeueReusableCell(withReuseIdentifier: "cell_id", for: indexPath) as? UICollectionViewListCell
         var configuration = cell?.defaultContentConfiguration()
-        configuration?.text = item.name
+        configuration?.text = item.name.rawValue
         cell?.contentConfiguration = configuration
         return cell ?? UICollectionViewListCell()
     }
+    
 }

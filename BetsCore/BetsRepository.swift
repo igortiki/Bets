@@ -14,9 +14,9 @@ public class BetRepository {
         var bets = try await service.loadBets()
         
         for i in 0 ..< bets.count {
-            if bets[i].name != "Player performance", bets[i].name != "Total score" {
+            if bets[i].name != .playerPerformance, bets[i].name != .totalScore {
                 if bets[i].quality > 0 {
-                    if bets[i].name != "Winning team" {
+                    if bets[i].name != .winningTeam {
                         bets[i].quality = bets[i].quality - 1
                     }
                 }
@@ -24,7 +24,7 @@ public class BetRepository {
                 if bets[i].quality < 50 {
                     bets[i].quality = bets[i].quality + 1
 
-                    if bets[i].name == "Total score" {
+                    if bets[i].name == .totalScore {
                         if bets[i].sellIn < 11 {
                             if bets[i].quality < 50 {
                                 bets[i].quality = bets[i].quality + 1
@@ -40,15 +40,15 @@ public class BetRepository {
                 }
             }
 
-            if bets[i].name != "Winning team" {
+            if bets[i].name != .winningTeam {
                 bets[i].sellIn = bets[i].sellIn - 1
             }
 
             if bets[i].sellIn < 0 {
-                if bets[i].name != "Player performance" {
-                    if bets[i].name != "Total score" {
+                if bets[i].name != .playerPerformance {
+                    if bets[i].name != .totalScore {
                         if bets[i].quality > 0 {
-                            if bets[i].name != "Winning team" {
+                            if bets[i].name != .winningTeam {
                                 bets[i].quality = bets[i].quality - 1
                             }
                         }
