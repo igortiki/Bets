@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A882A52CE9412C00F37F02 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9229E69531009AD7E4 /* Bet.swift */; };
+		84A882A72CE941FA00F37F02 /* BettingFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A882A62CE941FA00F37F02 /* BettingFlowHandler.swift */; };
+		84A882AA2CE9435D00F37F02 /* BettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A882A92CE9435D00F37F02 /* BettingViewModel.swift */; };
+		84DF35362CE8CAB7005C601A /* MainFlowHandlerFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF35332CE8CAB7005C601A /* MainFlowHandlerFlowHandler.swift */; };
+		84DF354F2CE93B62005C601A /* BettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF354E2CE93B62005C601A /* BettingViewController.swift */; };
+		84E384CD2CEA1151006C972E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E384CC2CEA1151006C972E /* RootViewController.xib */; };
+		84E384CE2CEA1151006C972E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384CB2CEA1151006C972E /* RootViewController.swift */; };
+		84E384D02CEA14B5006C972E /* BettingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384CF2CEA14B5006C972E /* BettingViewModelProtocol.swift */; };
+		84E384D22CEA6BF3006C972E /* BettingItemViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D12CEA6BF3006C972E /* BettingItemViewModelProtocol.swift */; };
+		84E384D42CEA6DE0006C972E /* BettingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D32CEA6DE0006C972E /* BettingItemViewModel.swift */; };
+		84E384D82CEA8F5D006C972E /* BetTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D72CEA8F5D006C972E /* BetTransformer.swift */; };
 		B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */; };
 		B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */; };
-		B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5F29E69206009AD7E4 /* ViewController.swift */; };
-		B5C0FD6329E69206009AD7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6129E69206009AD7E4 /* Main.storyboard */; };
 		B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6429E69208009AD7E4 /* Assets.xcassets */; };
 		B5C0FD6829E69208009AD7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */; };
 		B5C0FD7C29E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
@@ -19,7 +28,6 @@
 		B5C0FD8729E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
 		B5C0FD8829E694E1009AD7E4 /* BetsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5C0FD9129E6950A009AD7E4 /* BetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */; };
-		B5C0FD9329E69531009AD7E4 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9229E69531009AD7E4 /* Bet.swift */; };
 		B5C0FD9529E69625009AD7E4 /* RemoteBetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +70,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84A882A62CE941FA00F37F02 /* BettingFlowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingFlowHandler.swift; sourceTree = "<group>"; };
+		84A882A92CE9435D00F37F02 /* BettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingViewModel.swift; sourceTree = "<group>"; };
+		84DF35332CE8CAB7005C601A /* MainFlowHandlerFlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowHandlerFlowHandler.swift; sourceTree = "<group>"; };
+		84DF354E2CE93B62005C601A /* BettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingViewController.swift; sourceTree = "<group>"; };
+		84E384CB2CEA1151006C972E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		84E384CC2CEA1151006C972E /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		84E384CF2CEA14B5006C972E /* BettingViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingViewModelProtocol.swift; sourceTree = "<group>"; };
+		84E384D12CEA6BF3006C972E /* BettingItemViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingItemViewModelProtocol.swift; sourceTree = "<group>"; };
+		84E384D32CEA6DE0006C972E /* BettingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingItemViewModel.swift; sourceTree = "<group>"; };
+		84E384D72CEA8F5D006C972E /* BetTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTransformer.swift; sourceTree = "<group>"; };
 		B5C0FD5829E69206009AD7E4 /* Bets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5C0FD5F29E69206009AD7E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5C0FD6229E69206009AD7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5C0FD6429E69208009AD7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C0FD6729E69208009AD7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C0FD6929E69208009AD7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +122,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A882A22CE93FB200F37F02 /* UIFlowHandler */ = {
+			isa = PBXGroup;
+			children = (
+				84DF35332CE8CAB7005C601A /* MainFlowHandlerFlowHandler.swift */,
+			);
+			path = UIFlowHandler;
+			sourceTree = "<group>";
+		};
+		84A882A32CE9406A00F37F02 /* BettingSection */ = {
+			isa = PBXGroup;
+			children = (
+				84E384D52CEA75EE006C972E /* FlowHandler */,
+				84A882A82CE9433800F37F02 /* ViewModel */,
+				84E384D62CEA77D2006C972E /* UI */,
+			);
+			path = BettingSection;
+			sourceTree = "<group>";
+		};
+		84A882A82CE9433800F37F02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E384D12CEA6BF3006C972E /* BettingItemViewModelProtocol.swift */,
+				84E384D32CEA6DE0006C972E /* BettingItemViewModel.swift */,
+				84E384CF2CEA14B5006C972E /* BettingViewModelProtocol.swift */,
+				84A882A92CE9435D00F37F02 /* BettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84E384D52CEA75EE006C972E /* FlowHandler */ = {
+			isa = PBXGroup;
+			children = (
+				84A882A62CE941FA00F37F02 /* BettingFlowHandler.swift */,
+			);
+			path = FlowHandler;
+			sourceTree = "<group>";
+		};
+		84E384D62CEA77D2006C972E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84DF354E2CE93B62005C601A /* BettingViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		B5C0FD4F29E69206009AD7E4 = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +190,13 @@
 		B5C0FD5A29E69206009AD7E4 /* Bets */ = {
 			isa = PBXGroup;
 			children = (
+				84A882A22CE93FB200F37F02 /* UIFlowHandler */,
+				84A882A32CE9406A00F37F02 /* BettingSection */,
 				B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */,
 				B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */,
-				B5C0FD5F29E69206009AD7E4 /* ViewController.swift */,
+				84E384CB2CEA1151006C972E /* RootViewController.swift */,
+				84E384CC2CEA1151006C972E /* RootViewController.xib */,
 				B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */,
-				B5C0FD6129E69206009AD7E4 /* Main.storyboard */,
 				B5C0FD6429E69208009AD7E4 /* Assets.xcassets */,
 				B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */,
 				B5C0FD6929E69208009AD7E4 /* Info.plist */,
@@ -145,8 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				B5C0FD7629E694E0009AD7E4 /* BetsCore.h */,
-				B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */,
 				B5C0FD9229E69531009AD7E4 /* Bet.swift */,
+				B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */,
+				84E384D72CEA8F5D006C972E /* BetTransformer.swift */,
 			);
 			path = BetsCore;
 			sourceTree = "<group>";
@@ -237,7 +301,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					B5C0FD5729E69206009AD7E4 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -279,7 +343,7 @@
 			files = (
 				B5C0FD6829E69208009AD7E4 /* LaunchScreen.storyboard in Resources */,
 				B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */,
-				B5C0FD6329E69206009AD7E4 /* Main.storyboard in Resources */,
+				84E384CD2CEA1151006C972E /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +368,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */,
 				B5C0FD9529E69625009AD7E4 /* RemoteBetService.swift in Sources */,
 				B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */,
+				84DF35362CE8CAB7005C601A /* MainFlowHandlerFlowHandler.swift in Sources */,
+				84A882A72CE941FA00F37F02 /* BettingFlowHandler.swift in Sources */,
 				B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */,
+				84E384D02CEA14B5006C972E /* BettingViewModelProtocol.swift in Sources */,
+				84DF354F2CE93B62005C601A /* BettingViewController.swift in Sources */,
+				84E384D22CEA6BF3006C972E /* BettingItemViewModelProtocol.swift in Sources */,
+				84E384D42CEA6DE0006C972E /* BettingItemViewModel.swift in Sources */,
+				84E384CE2CEA1151006C972E /* RootViewController.swift in Sources */,
+				84A882AA2CE9435D00F37F02 /* BettingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E384D82CEA8F5D006C972E /* BetTransformer.swift in Sources */,
 				B5C0FD9129E6950A009AD7E4 /* BetsRepository.swift in Sources */,
-				B5C0FD9329E69531009AD7E4 /* Bet.swift in Sources */,
+				84A882A52CE9412C00F37F02 /* Bet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5C0FD6129E69206009AD7E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5C0FD6229E69206009AD7E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -404,6 +468,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -464,6 +529,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -494,7 +560,6 @@
 				INFOPLIST_FILE = Bets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +587,6 @@
 				INFOPLIST_FILE = Bets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -544,10 +608,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -562,6 +628,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.BetsCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -582,10 +649,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -600,6 +669,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.BetsCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -619,6 +689,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -640,6 +711,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;

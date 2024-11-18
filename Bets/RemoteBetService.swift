@@ -8,22 +8,22 @@ actor RemoteBetService: BetService {
     private init() { }
     
     private var bets: [Bet] = [
-        Bet(name: "Winning team", sellIn: 8, quality: 15),
-        Bet(name: "Total score", sellIn: 5, quality: 26),
-        Bet(name: "Player performance", sellIn: 9, quality: 4),
-        Bet(name: "First goal scorer", sellIn: 10, quality: 49),
-        Bet(name: "Number of fouls", sellIn: 4, quality: 21),
-        Bet(name: "Corner kicks", sellIn: 9, quality: 32),
-        Bet(name: "Yellow cards", sellIn: 0, quality: 45),
-        Bet(name: "Red cards", sellIn: 2, quality: 11),
-        Bet(name: "Offsides", sellIn: 2, quality: 14),
-        Bet(name: "Penalties", sellIn: 4, quality: 10),
-        Bet(name: "Half-time score", sellIn: 1, quality: 42),
-        Bet(name: "Clean sheet", sellIn: 10, quality: 34),
-        Bet(name: "Hat trick", sellIn: 9, quality: 32),
-        Bet(name: "Number of sets won", sellIn: 8, quality: 17),
-        Bet(name: "Number of aces", sellIn: 6, quality: 46),
-        Bet(name: "Set score", sellIn: 9, quality: 12),
+        Bet(name: .winningTeam, sellIn: 8, quality: 15),
+        Bet(name: .totalScore, sellIn: 5, quality: 26),
+        Bet(name: .playerPerformance, sellIn: 9, quality: 4),
+        Bet(name: .firstGoalScorer, sellIn: 10, quality: 49),
+        Bet(name: .numberOfFouls, sellIn: 4, quality: 21),
+        Bet(name: .cornerKicks, sellIn: 9, quality: 32),
+        Bet(name: .yellowCards, sellIn: 0, quality: 45),
+        Bet(name: .redCards, sellIn: 2, quality: 11),
+        Bet(name: .offsides, sellIn: 2, quality: 14),
+        Bet(name: .penalties, sellIn: 4, quality: 10),
+        Bet(name: .halfTimeScore, sellIn: 1, quality: 42),
+        Bet(name: .cleanSheet, sellIn: 10, quality: 34),
+        Bet(name: .hatTrick, sellIn: 9, quality: 32),
+        Bet(name: .numberOfSetsWon, sellIn: 8, quality: 17),
+        Bet(name: .numberOfAces, sellIn: 6, quality: 46),
+        Bet(name: .setScore, sellIn: 9, quality: 12),
     ]
     
     func loadBets() async throws -> [Bet] {
