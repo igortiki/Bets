@@ -5,63 +5,16 @@ public protocol BetService {
 
 public class BetRepository {
     private let service: BetService
+    private let transformer: BetTransformer
 
-    public init(service: BetService) {
+    public init(service: BetService, transformer: BetTransformer) {
         self.service = service
+        self.transformer = transformer
     }
 
     public func updateOdds() async throws -> [Bet] {
         var bets = try await service.loadBets()
-        
-        for i in 0 ..< bets.count {
-            if bets[i].name != .playerPerformance, bets[i].name != .totalScore {
-                if bets[i].quality > 0 {
-                    if bets[i].name != .winningTeam {
-                        bets[i].quality = bets[i].quality - 1
-                    }
-                }
-            } else {
-                if bets[i].quality < 50 {
-                    bets[i].quality = bets[i].quality + 1
-
-                    if bets[i].name == .totalScore {
-                        if bets[i].sellIn < 11 {
-                            if bets[i].quality < 50 {
-                                bets[i].quality = bets[i].quality + 1
-                            }
-                        }
-
-                        if bets[i].sellIn < 6 {
-                            if bets[i].quality < 50 {
-                                bets[i].quality = bets[i].quality + 1
-                            }
-                        }
-                    }
-                }
-            }
-
-            if bets[i].name != .winningTeam {
-                bets[i].sellIn = bets[i].sellIn - 1
-            }
-
-            if bets[i].sellIn < 0 {
-                if bets[i].name != .playerPerformance {
-                    if bets[i].name != .totalScore {
-                        if bets[i].quality > 0 {
-                            if bets[i].name != .winningTeam {
-                                bets[i].quality = bets[i].quality - 1
-                            }
-                        }
-                    } else {
-                        bets[i].quality = bets[i].quality - bets[i].quality
-                    }
-                } else {
-                    if bets[i].quality < 50 {
-                        bets[i].quality = bets[i].quality + 1
-                    }
-                }
-            }
-        }
+        bets = try await transformer.transform(bets: bets)
 
         try await service.saveBets(bets)
         return bets

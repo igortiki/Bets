@@ -10,7 +10,7 @@ import BetsCore
 
 class BettingFlowHandler: MainFlowHandler {
     override func startFlow() {
-        let betRepository = BetRepository(service: RemoteBetService.instance)
+        let betRepository = BetRepository(service: RemoteBetService.instance, transformer: BetTransformer())
         let viewModel = BettingViewModel(repository: betRepository)
         
         let bettingViewController = BettingViewController(viewModel: viewModel)

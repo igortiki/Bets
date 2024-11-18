@@ -17,6 +17,7 @@
 		84E384D02CEA14B5006C972E /* BettingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384CF2CEA14B5006C972E /* BettingViewModelProtocol.swift */; };
 		84E384D22CEA6BF3006C972E /* BettingItemViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D12CEA6BF3006C972E /* BettingItemViewModelProtocol.swift */; };
 		84E384D42CEA6DE0006C972E /* BettingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D32CEA6DE0006C972E /* BettingItemViewModel.swift */; };
+		84E384D82CEA8F5D006C972E /* BetTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E384D72CEA8F5D006C972E /* BetTransformer.swift */; };
 		B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */; };
 		B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */; };
 		B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6429E69208009AD7E4 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		84E384CF2CEA14B5006C972E /* BettingViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingViewModelProtocol.swift; sourceTree = "<group>"; };
 		84E384D12CEA6BF3006C972E /* BettingItemViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingItemViewModelProtocol.swift; sourceTree = "<group>"; };
 		84E384D32CEA6DE0006C972E /* BettingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingItemViewModel.swift; sourceTree = "<group>"; };
+		84E384D72CEA8F5D006C972E /* BetTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTransformer.swift; sourceTree = "<group>"; };
 		B5C0FD5829E69206009AD7E4 /* Bets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				B5C0FD7629E694E0009AD7E4 /* BetsCore.h */,
 				B5C0FD9229E69531009AD7E4 /* Bet.swift */,
 				B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */,
+				84E384D72CEA8F5D006C972E /* BetTransformer.swift */,
 			);
 			path = BetsCore;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E384D82CEA8F5D006C972E /* BetTransformer.swift in Sources */,
 				B5C0FD9129E6950A009AD7E4 /* BetsRepository.swift in Sources */,
 				84A882A52CE9412C00F37F02 /* Bet.swift in Sources */,
 			);
